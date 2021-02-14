@@ -1,7 +1,7 @@
 let btn = document.querySelectorAll('.drum');
 let audio;
 for (i = 0; i < btn.length; i++) {
-  btn[i].addEventListener('click', function(){
+  btn[i].addEventListener('click', () => {
     let btnInnerHtml = this.innerHTML;
     keyClick(btnInnerHtml);
     btnAnimate(btnInnerHtml);
